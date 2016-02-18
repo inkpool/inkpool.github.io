@@ -15,6 +15,7 @@ widget1:
 widget2:
   title: "旅行 | Travel"
   url: 'http://inkpool.github.io/'
+  image: widget-1-302x182.jpg
   text: '无所谓终点，因旅行永不结束。'
 widget3:
   title: "学习 | Study"
