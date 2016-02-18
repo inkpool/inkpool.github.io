@@ -8,11 +8,6 @@
   class: icon-twitter
   title: "Twitter"
 
-- name: Linkedin
-  url: https://www.linkedin.com/in/mochi-xue-00362452
-  class: icon-facebook
-  title: "Linkedin"
-
 # - name: Soundcloud
 #   url: http://soundcloud.com/
 #   class: icon-soundcloud
