@@ -1,13 +1,15 @@
 ---
 layout: page
-title: "Contact"
-meta_title: "Contact"
-subheadline: "Wufoo-powered contact forms"
-teaser: "想联系我？"
+title: "关于我"
+meta_title: "About"
+teaser: "About Me"
 permalink: "/contact/"
 ---
-您可以通过邮件联系我，或者通过下评论插件留言。
 
-Email:xuemochi@sjtu.edu.cn
+本人目前上海交通大学研究生二年级在读，同时在Intel上海研发中心实习。搬砖领域主要集中在虚拟化方向，更细致点讲就是Intel的GVT-g。喜欢电影、高清、旅游、乐高、随身HiFi和吃等。曾经是pt收割机，现在是并一直是Dota2、CS GO彩笔玩家。
+
+如果想与我取得联系请给我发邮件，或者在下方的评论插件中留言。
+
+
 
 
