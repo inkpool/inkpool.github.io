@@ -6,14 +6,12 @@
   url: "/blog/archive/"
   side: left
 
-- title: Documentation
-  url: "/documentation/"
+- title: "乐高"
+  url: "/lego/"
   side: left
   dropdown:
-  - title: "Changelog"
-    url: "/changelog/"
-  - title: "Roadmap"
-    url: "/roadmap/"
+  - title: "Technic 42043"
+    url: "/lego42043/"
 
 - title: "搜索"
   url: "/search/"
