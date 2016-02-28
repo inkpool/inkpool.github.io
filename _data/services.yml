@@ -2,15 +2,11 @@
 
 - name: "Contact"
   url: "/contact/"
-  title: "Contact"
+  title: "联系我"
 
 - name: "RSS"
   url: "/feed.xml"
-  title: "Subscribe to RSS Feed"
-
-- name: "Atom"
-  url: "/atom.xml"
-  title: "Subscribe to Atom Feed"
+  title: "RSS订阅"
 
 - name: "sitemap.xml"
   url: "/sitemap.xml"

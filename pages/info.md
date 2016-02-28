@@ -1,61 +1,14 @@
 ---
 layout: page
-title: "About"
-subheadline: "Why another Jekyll Theme?"
-teaser: "Since years I am programming and designing websites. I love to work with open source tools and learn via code from others. This time I want to try to give something back..."
+title: "关于本博客"
+subheadline: "About My Blog"
+teaser: "这是墨水的博客，用来记录他的生活与学习。"
 permalink: "/info/"
 header:
-    image_fullwidth: "header_drop.jpg"
+    image_fullwidth: "header_about_mysite.jpg"
 ---
-...and learn at the same time.
+本博客托管在[GitHub Pages](https://pages.github.com/)上，使用[Jekyll](http://jekyllrb.com/)静态框架，并且借用了[Feeling Responsive](http://phlow.github.io/feeling-responsive/)模板。在此感谢提供优秀代码和服务的开发人员以及组织。
 
-*Feeling Responsive* is my first theme which I let into the world. It's built on work and knowledge of others. While I am still designing it, you read about whats behind this theme in the – *hopefully* – near future.
+本博客中所用的装饰图片都是我自己拍摄的，只经过简单的压缩和裁剪以适应博客的比例。
 
-
-## Features
-
-* [Responsive Gallery][8], [Videos][9], [Grid][10], [Typography][11],...
-* 100% GitHub Pages friendly
-* Easy editable navigation, footer and social media links
-* Language Ready – just translate one file.
-* Lots of possibilities to customize it to your needs
-* Lots of different headers
-* Various post formats to let your content shine
-* Uses Jekyll 3.0
-* Multiple possibilities to use images in different ways
-* Fine typography
-* Play Video and Audio with [Mediaelement.js][12]
-
-
-
-## I got inspired by...
-
-[Michael Rose][1] and his fabulous [themes for jekyll][2]. Authors of [A List Apart][4] and [Smashing Magazine][5] since 2002. [GitHub][6] and how they built such a habitat for cooperation worldwide. [Automattic][3] and how they built a fantastic community around WordPress. And many, many more...
-
-Please make *Feeling Responsive* yours and if you like it, please link back to my homebase <a href="http://phlow.de/">Phlow</a>. That would be awesome.
-
-#### Since then, fork it!
-
-Yours sincerelly, [Moritz »mo.« Sauer][7]
-
-
- [1]: http://mademistakes.com/about/
- [2]: http://mademistakes.com/work/jekyll-themes/
- [3]: http://automattic.com/
- [4]: http://alistapart.com/
- [5]: http://www.smashingmagazine.com/
- [6]: https://github.com/
- [7]: http://sauer.io
- [8]: {{ site.url }}/design/gallery/
- [9]: {{ site.url }}/design/video/
- [10]: {{ site.url }}/design/grid/
- [11]: {{ site.url }}/design/typography/
- [12]: {{ site.url }}/design/mediaelement_js/
- [13]: #
- [14]: #
- [15]: #
- [16]: #
- [17]: #
- [18]: #
- [19]: #
- [20]: #
+关于我本人的信息，请点击[这里](inkpool.github.com/contact/)。
