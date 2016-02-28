@@ -9,6 +9,8 @@ categories:
     - life
 tags:
     - lego
+image:
+    title: "header_lego.jpg"
     
 author: inkpool
 ---
