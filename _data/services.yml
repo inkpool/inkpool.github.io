@@ -1,10 +1,10 @@
-- menu_name: "Services"
+- menu_name: "其他"
 
-- name: "Contact"
+- name: "联系我"
   url: "/contact/"
   title: "联系我"
 
-- name: "RSS"
+- name: "RSS订阅"
   url: "/feed.xml"
   title: "RSS订阅"
 
