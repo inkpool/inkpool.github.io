@@ -53,7 +53,8 @@ paginate_path: "blog/page:num"
 
 
 # Theme works best with Kramdown (using the table of contents function)
-markdown: kramdown
+markdown: Kramdown
+#markdown: redcarpet
 permalink: /:categories/:title/
 highlight: pygments
 excerpt_separator: "<!--more-->"
