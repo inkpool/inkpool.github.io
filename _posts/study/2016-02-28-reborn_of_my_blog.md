@@ -9,7 +9,6 @@ categories:
     - study
 tags:
     - maintainance
-    - lego
 image:
     title: "header_how_do_i_choose_my_blog.jpg"
     
