@@ -59,7 +59,7 @@ kvm
 
 这里的`3.18.0-rc7-vgt-2015q3+`与`/lib/modules/`目录下面的模块版本号匹配。  
 
-## 编译Qemu  
+## 2 编译Qemu  
 
 ~~~
 # git clone https://github.com/01org/igvtg-qemu -b kvmgt_public2015q3 qemu_src
@@ -77,9 +77,9 @@ kvm
 # cp ./roms/seabios/out/bios.bin /usr/bin/bios.bin
 ~~~
 
-## 配置宿主机环境  
+## 3 配置宿主机环境  
 
-### 创建客户机网络脚本  
+### 3.1 创建客户机网络脚本  
 
 创建`/etc/qemu-ifup`文件，并写入以下内容： 
 
@@ -107,7 +107,7 @@ chomd 755 /etc/qemu-ifup
 
 这个文件在启动虚拟机的时候会用到，这里我们先把它准备好。
 
-### 添加grub项 
+### 3.2 添加grub项 
 
 打开`/etc/grub.d/40_custom`文件，将以下内容复制到`exec tail -n +3 $0`这句的下面：
 
@@ -146,9 +146,9 @@ menuentry 'Ubuntu-kvmgt' --class kvmgt --class gnu-linux --class gnu --class os 
 
 OK，重新启动系统，然后选择我们新加的Grub启动项`Ubuntu-kvmgt`，成功进入系统就算成功了。
 
-## 部署客户机
+## 4 部署客户机
 
-### 创建桥接网络
+### 4.1 创建桥接网络
 
 在宿主机创建一个桥接网络，用来给宿主机分配ip。
 
@@ -161,7 +161,7 @@ OK，重新启动系统，然后选择我们新加的Grub启动项`Ubuntu-kvmgt`
 
 这里的eth0要根据具体情况来看，有些人可能是eth1等。
 
-### 创建客户机镜像
+### 4.2 创建客户机镜像
 
 首先我们还是要像普通的KVM虚拟机一样，先为虚拟机创建一个镜像，然后安装一个操作系统。这里与宿主机一致，我选择的是Ubuntu 14.04。如果你有一个纯净的Ubuntu 14.04的img你也可以拿来直接用。这一步我们在这里就省略了，可以参考一般KVM的客户机安装步骤。我的客户机镜像是ubuntu-14.04.img。
 
@@ -171,7 +171,7 @@ OK，重新启动系统，然后选择我们新加的Grub启动项`Ubuntu-kvmgt`
 /usr/bin/qemu-system-x86_64 -m 2048 -smp 2 -hda /path/to/ubuntu-14.04.img -cdrom /path/to/ubuntu-14.04-install.iso
 ~~~
 
-### 更新客户机内核
+### 4.3 更新客户机内核
 
 要使用KVMGT我们需要更新客户机系统的内核，用我们在步骤1给宿主机编译的内核来替换客户机的内核。我们把img挂载到/mnt下面，然后替换其内核。
 
@@ -203,7 +203,7 @@ add map loop0p5 : 0 1075200 linear 253:1 2
 
 卸载掉img之后，接着给guest的grub.cfg也添加一个entry，参照第3.2步。
 
-### 启动虚拟机
+### 4.4 启动虚拟机
 
 当我们替换好客户机的内核，并且为客户机添加过新的grub entry之后，就可以开启KVMGT的功能，然后启动虚拟机了。使用如下Qemu参数启动虚拟机：
 
