@@ -19,21 +19,21 @@ GVT-g作为Intel的GPU虚拟化解决方案中的重头角色，势必是要吸�
 
 本文主要讲解GVT-g针对KVM的配置，主要分为四个步骤：编译内核、编译Qemu、配置宿主机环境、 部署客户机。
 
-## 编译内核  
+## 1 编译内核  
 
-### 环境准备  
+### 1.1 环境准备  
 你需要一台装有Intel GPU的电脑，具体来讲，你的电脑需要拥有Sandy Bridge、HASWELL、Broad Well或者Sky Lake中任意一代集成有Intel Graphics HD的CPU。我个人用的是Haswell，也是目前市面上最主流的平台。除了CPU之外，别的并没有特殊要求，内存和硬盘自然是越大/越快越好。另外，装了独立显卡的同学先把独立显卡拆了...  
 
 根据XenGT的经验，我个人推荐使用Ubuntu系统来使用KVMGT，特别推荐使用12.04和14.04，本文用的是14.04.1。  
 
-### 安装依赖  
+### 1.2 安装依赖  
 安装编译和以后使用过程中所需要的依赖：
 
 ~~~
 # apt-get install libarchive-dev libghc-bzlib-dev zlib1g-dev mercurial gettext bcc iasl uuid-dev libncurses5-dev kpartx libegl1-mesa-dev libudev-dev libperl-dev libgtk2.0-dev libc6-dev-i386 libaio-dev  libsdl1.2-dev  nfs-common libyajl-dev libx11-dev autoconf libtool xsltproc bison flex xutils-dev x11proto-gl-dev libx11-xcb-dev libxcb-glx0 libxcb-glx0-dev libxcb-dri2-0-dev libxcb-xfixes0-dev bridge-utils python-dev bin86 git vim libssl-dev libpci-dev tightvncserver ssh texinfo mesa-utils ocaml-findlib liblcms-utils vim-addon-manager metacity nautilus openssh-server cgvg socat uml-utilities -y
 ~~~
 
-### 编译安装内核  
+### 1.3 编译安装内核  
 
 在`/etc/initramfs-tools/modules`里加上两行：
 
